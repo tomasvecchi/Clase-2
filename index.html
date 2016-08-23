@@ -249,5 +249,91 @@
 			<a href="purchase.html"></a>
 		</article>
 	</section>
+
+	<section>
+		<table>
+			<tr>
+				<td>paises</td>
+				<td>bronce</td>
+				<td>plata</td>
+				<td>oro</td>
+			</tr>
+			<tr>
+				<td>argentina</td>
+				<td>10</td>
+				<td>8</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>brasil</td>
+				<td>5</td>
+				<td>6</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>uruguay</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>	
+				<td>colombia</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>usa</td>
+				<td>6</td>
+				<td>8</td>
+				<td>23</td>
+			</tr>
+		</table>
+	</section>
+
+<hr/>
+
+	<section>
+		<form method="POST" action="enviar.php">
+			<label for="nombre">Nombre: </label>
+			<input name="nombre" placeholder="Ingresa tu nombre" type="text" required>
+			<br/>
+			<label for="correo">Correo: </label>
+			<input name="correo" placeholder="Ingresa tu correo" type="email" required>
+			<br/>
+			<label for="password"> Contrasenia</label>
+			<input name="password" placeholder="Ingresa contrasenia" type="password" required>
+			<br/>
+			<label for="telefono">Telefono: </label>
+			<input type="tel" name="telefono" placeholder="Ingresa telefono">
+			<br/>
+			<label for="edad">Edad: </label>
+			<input type="number" name="edad" placeholder="Ingresa edad">
+			<br/>
+			<label for="comentarios">Mensaje</label>
+			<textarea name="comentarios" placeholder="Ingresa tu comentario"></textarea>
+			<br/>
+			<label for="destino">Destino</label>
+			<select name="destino" required>
+				<option value="">Seleccionar destino</option>
+				<option value="CABA">CABA</option>
+				<option value="BA">Buenos Aires</option>
+				<option value="ER">Entre Rios</option>
+				<option value="SF">Santa Fe</option>
+			</select>
+			<br/>
+			<label for="entrega">Metodo de Entrega: </label>
+				<br/>
+				<input type="radio" name="entrega" value="delivery"><span>Delivery</span>
+				<input type="radio" name="entrega" value="local"><span>Retira por el local</span>
+
+				<br/>
+				<label for="cv">Curriculum</label>
+				<input type="file">
+				<br/>
+			<input type="submit" value="Enviar Formulario" name="cv">
+		</form>
+	</section>
+
  </body>
 </html>
